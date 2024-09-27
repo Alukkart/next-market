@@ -8,7 +8,6 @@ export const dynamic = 'force-dynamic';
 export async function GET(req: any, res: any) {
     try {
         const user = await getServerSession(req, res, authOptions)
-        console.log(user, 999)
         if (!user) {
             return NextResponse.json({ message: 'User not found' }, { status: 401 })
         }
