@@ -2,6 +2,8 @@ import { ThemeProvider } from "@/shared/components/shared/theme-provider";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/shared/components/shared/providers";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import React from "react";
 
 const nunito = Nunito({
     subsets: ["cyrillic"],
@@ -18,6 +20,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
             <body className={nunito.className}>
                 <Providers>
+                    <SpeedInsights />
                     {children}
                 </Providers>
             </body>
