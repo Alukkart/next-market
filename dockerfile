@@ -3,7 +3,7 @@ FROM node:latest
 WORKDIR /app
 COPY package*.json ./
 RUN npm i
-EXPOSE 8888
+EXPOSE 3000
 COPY . .
 RUN npm run build
 RUN npx prisma db push

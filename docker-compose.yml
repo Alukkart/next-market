@@ -2,7 +2,7 @@ services:
   web:
     build: .
     ports:
-      - "8888:8888"
+      - "3000:3000"
     depends_on:
       - db
     restart: always
