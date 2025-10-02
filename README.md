@@ -1,6 +1,9 @@
 # Preview
 https://next-market-rose.vercel.app/
 
+<img width="2127" height="1375" alt="image" src="https://github.com/user-attachments/assets/323030b7-bcf5-4cc2-898b-a630cf65feb6" />
+
+
 ## Getting Started
 
 First, run the development server:
